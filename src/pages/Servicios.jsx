@@ -35,7 +35,7 @@ export default function Servicios() {
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Diagnóstico clínico</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Plan de tratamiento personalizado</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Psicoterapia individual</li>
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Terapia de pareja</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Terapia de pareja, familias y grupos terapéuticos</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Seguimiento y evolución del proceso</li>
               </ul>
             </div>
@@ -45,7 +45,7 @@ export default function Servicios() {
                 <li>Ley de Ejercicio de la Psicología de Venezuela</li>
                 <li>Código de Ética del Psicólogo de Venezuela</li>
                 <li>Federación de Psicólogos de Venezuela (FPV)</li>
-                <li>Profesionales con número de colegiatura verificable</li>
+                <li>Profesionales con número de colegiatura verificable y más de 20 años de experiencia</li>
               </ul>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Servicios() {
             </label>
             <div className="mt-4">
               <button disabled={!venezuelaCheck} className={`px-6 py-2.5 rounded-lg font-semibold text-sm transition ${venezuelaCheck ? 'bg-verde-500 hover:bg-verde-600 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}>
-                Agendar Terapia Clínica
+                Reserva Ahora
               </button>
             </div>
           </div>
@@ -98,6 +98,7 @@ export default function Servicios() {
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Herramientas de crecimiento personal</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Manejo de estrés y ansiedad cotidiana</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Acompañamiento en transiciones de vida</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Biodescodificación y coaching emocional</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Orientación en relaciones interpersonales</li>
                 <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Psicoeducación y recursos de autoayuda</li>
               </ul>
@@ -118,7 +119,7 @@ export default function Servicios() {
               Leer Consentimiento Informado
             </Link>
             <Link to="/contacto" className="bg-verde-500 hover:bg-verde-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
-              Solicitar Acompañamiento
+              Reserva Ahora
             </Link>
           </div>
         </div>
