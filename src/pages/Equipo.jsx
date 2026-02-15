@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'http://localhost:5175/booking';
+
 const team = [
   {
     name: 'Lisandra Pozo Vásquez',
@@ -132,7 +134,7 @@ export default function Equipo() {
                 </div>
 
                 {/* Specialties */}
-                <div>
+                <div className="mb-4">
                   <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Especialidades:</span>
                   <div className="flex flex-wrap gap-1.5 mt-2">
                     {member.specialties.map(s => (
@@ -140,6 +142,10 @@ export default function Equipo() {
                     ))}
                   </div>
                 </div>
+
+                <a href={BOOKING_URL} className="block w-full text-center bg-verde-500 hover:bg-verde-600 text-white py-2.5 rounded-lg font-semibold text-sm transition">
+                  Reservar con {member.name.split(' ')[0]}
+                </a>
               </div>
             </div>
           ))}
