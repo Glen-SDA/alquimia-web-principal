@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
+const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'http://localhost:5175/booking';
+
 const links = [
   { to: '/', label: 'Inicio' },
   { to: '/servicios', label: 'Servicios' },
@@ -32,7 +34,7 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <a href="http://localhost:5175/booking" className="bg-verde-500 hover:bg-verde-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition">
+            <a href={BOOKING_URL} className="bg-verde-500 hover:bg-verde-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition">
               Agendar Cita
             </a>
           </div>
@@ -51,7 +53,7 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <a href="http://localhost:5175/booking" onClick={() => setOpen(false)} className="block text-center bg-verde-500 text-white py-2.5 rounded-lg text-sm font-semibold mt-2">
+            <a href={BOOKING_URL} onClick={() => setOpen(false)} className="block text-center bg-verde-500 text-white py-2.5 rounded-lg text-sm font-semibold mt-2">
               Agendar Cita
             </a>
           </div>

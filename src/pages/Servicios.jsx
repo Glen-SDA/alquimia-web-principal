@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'http://localhost:5175/booking';
+
 export default function Servicios() {
   const [venezuelaCheck, setVenezuelaCheck] = useState(false);
 
@@ -58,7 +60,7 @@ export default function Servicios() {
               <span className="text-sm text-gray-700">Declaro que me encuentro físicamente en Venezuela y entiendo que este servicio de terapia clínica solo está disponible para personas en territorio venezolano.</span>
             </label>
             <div className="mt-4">
-              <a href={venezuelaCheck ? 'http://localhost:5175/booking' : undefined} className={`inline-block px-6 py-2.5 rounded-lg font-semibold text-sm transition ${venezuelaCheck ? 'bg-verde-500 hover:bg-verde-600 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed pointer-events-none'}`}>
+              <a href={venezuelaCheck ? BOOKING_URL : undefined} className={`inline-block px-6 py-2.5 rounded-lg font-semibold text-sm transition ${venezuelaCheck ? 'bg-verde-500 hover:bg-verde-600 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed pointer-events-none'}`}>
                 Reserva Ahora
               </a>
             </div>
@@ -118,7 +120,7 @@ export default function Servicios() {
             <Link to="/consentimiento" className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
               Leer Consentimiento Informado
             </Link>
-            <a href="http://localhost:5175/booking" className="bg-verde-500 hover:bg-verde-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
+            <a href={BOOKING_URL} className="bg-verde-500 hover:bg-verde-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
               Reserva Ahora
             </a>
           </div>

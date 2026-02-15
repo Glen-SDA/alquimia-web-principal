@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect, useCallback } from 'react';
 
 const heroImages = ['/Hero01.png', '/Hero02.png', '/Hero03.png', '/Hero04.png', '/Hero05.png'];
+const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'http://localhost:5175/booking';
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
@@ -41,7 +42,7 @@ export default function Home() {
             </p>
             <p className="text-sm text-gray-400 mb-8">Alquimia Mental Online LLC - Registrada en Florida, EE.UU.</p>
             <div className="flex gap-4 flex-wrap">
-              <a href="http://localhost:5175/booking" className="bg-verde-500 hover:bg-verde-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg transition shadow-lg">
+              <a href={BOOKING_URL} className="bg-verde-500 hover:bg-verde-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg transition shadow-lg">
                 Reserva Ahora
               </a>
             </div>
@@ -166,7 +167,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-4">Creemos en tu capacidad de transformarte</h2>
           <p className="text-verde-100 mb-8">Nuestro equipo de profesionales está listo para acompañarte.</p>
-          <a href="http://localhost:5175/booking" className="inline-block bg-white text-verde-600 px-8 py-3.5 rounded-xl font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
+          <a href={BOOKING_URL} className="inline-block bg-white text-verde-600 px-8 py-3.5 rounded-xl font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
             Reserva Ahora
           </a>
         </div>
