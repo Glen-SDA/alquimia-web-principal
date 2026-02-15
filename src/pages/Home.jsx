@@ -41,9 +41,9 @@ export default function Home() {
             </p>
             <p className="text-sm text-gray-400 mb-8">Alquimia Mental Online LLC - Registrada en Florida, EE.UU.</p>
             <div className="flex gap-4 flex-wrap">
-              <Link to="/contacto" className="bg-verde-500 hover:bg-verde-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg transition shadow-lg">
+              <a href="http://localhost:5175/booking" className="bg-verde-500 hover:bg-verde-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg transition shadow-lg">
                 Reserva Ahora
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -166,9 +166,9 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-4">Creemos en tu capacidad de transformarte</h2>
           <p className="text-verde-100 mb-8">Nuestro equipo de profesionales está listo para acompañarte.</p>
-          <Link to="/contacto" className="inline-block bg-white text-verde-600 px-8 py-3.5 rounded-xl font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
+          <a href="http://localhost:5175/booking" className="inline-block bg-white text-verde-600 px-8 py-3.5 rounded-xl font-semibold text-lg hover:bg-gray-100 transition shadow-lg">
             Reserva Ahora
-          </Link>
+          </a>
         </div>
       </section>
     </div>

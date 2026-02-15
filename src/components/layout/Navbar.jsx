@@ -32,9 +32,9 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Link to="/servicios" className="bg-verde-500 hover:bg-verde-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition">
+            <a href="http://localhost:5175/booking" className="bg-verde-500 hover:bg-verde-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition">
               Agendar Cita
-            </Link>
+            </a>
           </div>
 
           <button className="lg:hidden" onClick={() => setOpen(!open)}>
@@ -51,9 +51,9 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Link to="/servicios" onClick={() => setOpen(false)} className="block text-center bg-verde-500 text-white py-2.5 rounded-lg text-sm font-semibold mt-2">
+            <a href="http://localhost:5175/booking" onClick={() => setOpen(false)} className="block text-center bg-verde-500 text-white py-2.5 rounded-lg text-sm font-semibold mt-2">
               Agendar Cita
-            </Link>
+            </a>
           </div>
         )}
       </div>
