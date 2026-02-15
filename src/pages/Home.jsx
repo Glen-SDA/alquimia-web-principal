@@ -1,13 +1,37 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect, useCallback } from 'react';
+
+const heroImages = ['/Hero01.png', '/Hero02.png', '/Hero03.png', '/Hero04.png', '/Hero05.png'];
 
 export default function Home() {
+  const [current, setCurrent] = useState(0);
+
+  const next = useCallback(() => setCurrent(i => (i + 1) % heroImages.length), []);
+  const prev = useCallback(() => setCurrent(i => (i - 1 + heroImages.length) % heroImages.length), []);
+
+  useEffect(() => {
+    const timer = setInterval(next, 5000);
+    return () => clearInterval(timer);
+  }, [next]);
+
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-black via-gray-900 to-verde-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+      <section className="relative text-white overflow-hidden">
+        {/* Carousel background */}
+        {heroImages.map((src, i) => (
+          <div
+            key={src}
+            className={`absolute inset-0 transition-opacity duration-700 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <img src={src} alt="" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/60" />
+          </div>
+        ))}
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 pl-20 sm:pl-24">
           <div className="max-w-3xl">
-            <img src="/logo.png" alt="Alquimia Mental Online" className="h-20 sm:h-24 w-auto mb-8" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
               ¡Tienes el poder de<br />
               <span className="text-verde-400">transformar tu vida!</span>
@@ -23,10 +47,34 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Carousel controls */}
+        <button onClick={prev} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center transition" aria-label="Anterior">
+          &#8249;
+        </button>
+        <button onClick={next} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center transition" aria-label="Siguiente">
+          &#8250;
+        </button>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {heroImages.map((_, i) => (
+            <button key={i} onClick={() => setCurrent(i)} className={`w-2.5 h-2.5 rounded-full transition ${i === current ? 'bg-verde-400 scale-125' : 'bg-white/50 hover:bg-white/80'}`} aria-label={`Foto ${i + 1}`} />
+          ))}
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="bg-white pt-16 pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-black mb-3">Conéctate con nuestro equipo de profesionales altamente efectivos</h2>
+          <p className="text-base sm:text-lg font-semibold mb-6" style={{ color: '#E91E63' }}>Adopta hoy una mentalidad más saludable y feliz</p>
+          <p className="text-gray-600 text-base max-w-3xl mx-auto">En Alquimia Mental, creemos en el poder transformador de una mente equilibrada y plena. Nuestro compromiso con tu bienestar mental es el corazón de nuestra misión. Con un equipo altamente capacitado, ofrecemos servicios de salud mental superiores, combinando un enfoque enriquecedor y eficaz.</p>
+        </div>
       </section>
 
       {/* Two Services */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-20">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">Nuestros Servicios</h2>
         <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">En Alquimia Mental, creemos en el poder transformador de una mente equilibrada y plena.</p>
 

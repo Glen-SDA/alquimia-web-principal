@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const team = [
   {
     name: 'Lisandra Pozo Vásquez',
@@ -9,6 +11,7 @@ const team = [
     bio: 'Lisandra Pozo Vásquez es Psicóloga Clínica, Máster en Coaching y PNL, y Especialista en Psiconeuroinmunología, con 28 años de experiencia profesional acompañando procesos de transformación personal. Atiende a niños a partir de los 8 años, adolescentes y adultos en el abordaje de depresión, ansiedad, duelos —incluido el duelo migratorio—, conflictos de pareja y familia, así como trastornos de la conducta alimentaria y procesos asociados al cáncer. Su enfoque integrativo incorpora herramientas como la biodescodificación emocional y el trabajo de corte y reprogramación de programas ancestrales, promoviendo bienestar profundo y equilibrio emocional.',
     statement: 'Licenciada para ejercer psicología clínica en Venezuela',
     image: '/Lisandra.jpg',
+    thumbnail: '/Lisandra_2.jpg',
   },
   {
     name: 'José Manuel Ferrer Caridad',
@@ -20,6 +23,7 @@ const team = [
     bio: 'José Manuel Ferrer Caridad es Psicólogo Clínico, Psicofisiólogo Forense y Coach Organizacional con más de 25 años de experiencia profesional en el ámbito clínico, forense y corporativo. Atiende a adolescentes y adultos en evaluación, diagnóstico y tratamiento de ansiedad, depresión y estrés, además de brindar orientación vocacional y acompañamiento en la construcción de proyectos de vida. Su trayectoria incluye la elaboración de perfiles psicológicos, investigación criminal, procesos de selección y reclutamiento, así como el diseño y facilitación de cursos y talleres especializados.',
     statement: 'Licenciado para ejercer psicología clínica en Venezuela',
     image: '/Jose.jpg',
+    thumbnail: '/Jose_2.jpg',
   },
   {
     name: 'Vicky Boscán',
@@ -31,12 +35,40 @@ const team = [
     bio: 'Vicky Boscán es Psicóloga Clínica y Coach Organizacional con 25 años de experiencia profesional, especializada en Sexología y Psiconeuroinmunología Lingüística, así como en el desarrollo de competencias personales y profesionales. Acompaña a niños, adolescentes y adultos en el abordaje de trastornos del neurodesarrollo, ansiedad, depresión, trastornos de la personalidad, manejo de emociones, adicciones modernas y relación con la alimentación, promoviendo autoestima y el diseño de un proyecto de vida sólido. Su enfoque integral también incluye terapia de pareja, rehabilitación en enfermedades psicosomáticas y fortalecimiento del bienestar, el equilibrio, la calidad de vida, el éxito y la autorrealización.',
     statement: 'Licenciada para ejercer psicología clínica en Venezuela',
     image: '/Vicky.jpg',
+    thumbnail: '/Vicky_2.jpg',
   },
 ];
 
 export default function Equipo() {
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
+
   return (
     <div>
+      {/* Lightbox Modal */}
+      {selectedPhoto && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedPhoto(null)}
+        >
+          <div className="relative max-w-3xl w-full">
+            <button
+              onClick={() => setSelectedPhoto(null)}
+              className="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-gray-300 transition"
+              aria-label="Cerrar"
+            >
+              &times;
+            </button>
+            <img
+              src={selectedPhoto.image}
+              alt={selectedPhoto.name}
+              className="w-full rounded-xl shadow-2xl"
+              onClick={e => e.stopPropagation()}
+            />
+            <p className="text-white text-center mt-4 font-semibold text-lg">{selectedPhoto.name}</p>
+          </div>
+        </div>
+      )}
+
       <section className="bg-gradient-to-br from-black to-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Nuestro Equipo</h1>
@@ -48,10 +80,18 @@ export default function Equipo() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map(member => (
             <div key={member.colegiatura} className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-lg transition">
-              {/* Foto del profesional */}
-              <div className="bg-gradient-to-br from-verde-500 to-verde-700 h-56 flex items-center justify-center overflow-hidden">
-                {member.image ? (
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+              {/* Foto del profesional - thumbnail con clic para ver completa */}
+              <div
+                className="bg-gradient-to-br from-verde-500 to-verde-700 h-56 flex items-center justify-center overflow-hidden cursor-pointer group relative"
+                onClick={() => setSelectedPhoto(member)}
+              >
+                {member.thumbnail ? (
+                  <>
+                    <img src={member.thumbnail} alt={member.name} className="w-full h-full object-cover object-top" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                      <span className="text-white opacity-0 group-hover:opacity-100 transition text-sm font-semibold bg-black/50 px-3 py-1.5 rounded-full">Ver foto</span>
+                    </div>
+                  </>
                 ) : (
                   <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center">
                     <span className="text-4xl text-white font-bold">{member.name.split(' ').map(n => n[0]).slice(0, 2).join('')}</span>
