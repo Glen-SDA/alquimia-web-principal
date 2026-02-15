@@ -30,9 +30,9 @@ export default function Home() {
         ))}
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 pl-20 sm:pl-24">
+        <div className="relative z-10 max-w-7xl mx-auto pl-16 pr-16 sm:pl-24 sm:pr-6 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
               ¡Tienes el poder de<br />
               <span className="text-verde-400">transformar tu vida!</span>
             </h1>

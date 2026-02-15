@@ -20,9 +20,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-3">
             <img src="/logo.png" alt="Alquimia Mental Online" className="h-12 w-auto" />
-            <div className="hidden sm:block leading-tight">
-              <span className="text-lg font-bold text-gray-900">Alquimia Mental Online</span>
-              <span className="block text-xs text-verde-500">Bienestar emocional profesional</span>
+            <div className="leading-tight">
+              <span className="text-sm sm:text-lg font-bold text-gray-900">Alquimia Mental Online</span>
+              <span className="hidden sm:block text-xs text-verde-500">Bienestar emocional profesional</span>
             </div>
           </Link>
 
