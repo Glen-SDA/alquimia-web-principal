@@ -19,7 +19,7 @@ const team = [
     name: 'José Manuel Ferrer Caridad',
     title: 'Psicólogo Clínico | Psicofisiólogo Forense | Coach Organizacional',
     license: 'Venezuela',
-    colegiatura: 'FPV V-015013',
+    colegiatura: 'FPV 4829',
     services: ['Terapia Clínica (Venezuela)', 'Acompañamiento Emocional (Internacional)'],
     specialties: ['Depresión', 'Estrés', 'Orientación vocacional', 'Selección y reclutamiento'],
     bio: 'José Manuel Ferrer Caridad es Psicólogo Clínico, Psicofisiólogo Forense y Coach Organizacional con más de 25 años de experiencia profesional en el ámbito clínico, forense y corporativo. Atiende a adolescentes y adultos en evaluación, diagnóstico y tratamiento de ansiedad, depresión y estrés, además de brindar orientación vocacional y acompañamiento en la construcción de proyectos de vida. Su trayectoria incluye la elaboración de perfiles psicológicos, investigación criminal, procesos de selección y reclutamiento, así como el diseño y facilitación de cursos y talleres especializados.',
