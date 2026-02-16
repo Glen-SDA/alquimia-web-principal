@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect, useCallback } from 'react';
 
 const heroImages = ['/Hero01.png', '/Hero02.png', '/Hero03.png', '/Hero04.png', '/Hero05.png'];
-const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'http://localhost:5175/booking';
+const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'https://reservas.alquimiamental.online/booking';
 
 export default function Home() {
   const [current, setCurrent] = useState(0);

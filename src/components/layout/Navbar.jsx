@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
-const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'http://localhost:5175/booking';
+const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'https://reservas.alquimiamental.online/booking';
 
 const links = [
   { to: '/', label: 'Inicio' },
