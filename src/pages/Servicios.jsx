@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const BOOKING_URL = import.meta.env.VITE_RESERVAS_URL || 'https://alquimia-mental-reservas-1.onrender.com/booking';
+const BOOKING_URL = 'https://alquimia-mental-reservas-1.onrender.com/booking';
 
 export default function Servicios() {
   const [venezuelaCheck, setVenezuelaCheck] = useState(false);
