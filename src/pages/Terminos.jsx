@@ -13,13 +13,13 @@ export default function Terminos() {
 
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3">1. Identificación de la Empresa</h2>
-            <p>Alquimia Mental Online LLC es una empresa registrada en el Estado de Florida, Estados Unidos. Opera como prestadora directa de servicios de terapia psicológica clínica para pacientes ubicados en Venezuela, y como plataforma de orientación psicoeducativa y acompañamiento emocional para usuarios internacionales.</p>
+            <p>Alquimia Mental Online LLC es una empresa registrada en el Estado de Florida, Estados Unidos. Opera como prestadora directa de servicios de terapia psicológica clínica para pacientes ubicados en Venezuela, y como plataforma de coaching de vida para usuarios internacionales.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3">2. Naturaleza de los Servicios</h2>
             <p className="mb-3"><strong>En Venezuela:</strong> La empresa actúa como prestadora directa de servicios de terapia psicológica clínica a través de profesionales con licencia vigente en Venezuela. Estos servicios incluyen evaluación, diagnóstico y tratamiento psicológico.</p>
-            <p><strong>Fuera de Venezuela:</strong> Los servicios se limitan a acompañamiento emocional y orientación psicoeducativa. Estos servicios NO constituyen psicoterapia, diagnóstico ni tratamiento de trastornos mentales. La empresa actúa como plataforma de orientación y bienestar emocional.</p>
+            <p><strong>Fuera de Venezuela:</strong> Los servicios se limitan a coaching de vida. Estos servicios NO constituyen psicoterapia, diagnóstico ni tratamiento de trastornos mentales. La empresa actúa como plataforma de bienestar emocional y crecimiento personal.</p>
           </div>
 
           <div>
@@ -39,7 +39,7 @@ export default function Terminos() {
               <li>La empresa no es responsable por interrupciones del servicio causadas por problemas técnicos, de conectividad o fuerza mayor.</li>
               <li>El usuario es responsable de proporcionar información veraz sobre su ubicación y condición.</li>
               <li>La empresa no se hace responsable por decisiones que el usuario tome basándose en la orientación recibida.</li>
-              <li>El servicio de acompañamiento emocional no sustituye atención médica, psiquiátrica o psicológica clínica.</li>
+              <li>El servicio de coaching de vida no sustituye atención médica, psiquiátrica o psicológica clínica.</li>
             </ul>
           </div>
 

@@ -7,9 +7,10 @@ const team = [
     name: 'Lisandra Pozo Vásquez',
     title: 'Psicóloga Clínica | Máster en Coaching y PNL | Especialista en Psiconeuroinmunología',
     license: 'Venezuela',
-    colegiatura: 'FPV V-015028',
-    services: ['Terapia Clínica (Venezuela)', 'Acompañamiento Emocional (Internacional)'],
-    specialties: ['Ansiedad', 'Duelo Migratorio', 'Conflictos de Familia', 'Cáncer'],
+    colegiatura: 'FPV 4447',
+    services: ['Terapia Clínica (Venezuela)', 'Coaching de Vida (Internacional)'],
+    specialties: ['Depresión', 'Ansiedad', 'Duelos', 'Conflictos de Pareja', 'Conflictos de Familia', 'Duelo Migratorio', 'Trastornos de la Conducta Alimentaria', 'Cáncer', 'Biodescodificación Emocional', 'Corte y Reprogramación de Programas Ancestrales'],
+    atencion: 'Niños (a partir de 8 años), adolescentes y adultos',
     bio: 'Lisandra Pozo Vásquez es Psicóloga Clínica, Máster en Coaching y PNL, y Especialista en Psiconeuroinmunología, con 28 años de experiencia profesional acompañando procesos de transformación personal. Atiende a niños a partir de los 8 años, adolescentes y adultos en el abordaje de depresión, ansiedad, duelos —incluido el duelo migratorio—, conflictos de pareja y familia, así como trastornos de la conducta alimentaria y procesos asociados al cáncer. Su enfoque integrativo incorpora herramientas como la biodescodificación emocional y el trabajo de corte y reprogramación de programas ancestrales, promoviendo bienestar profundo y equilibrio emocional.',
     statement: 'Licenciada para ejercer psicología clínica en Venezuela',
     image: '/Lisandra.jpg',
@@ -20,8 +21,9 @@ const team = [
     title: 'Psicólogo Clínico | Psicofisiólogo Forense | Coach Organizacional',
     license: 'Venezuela',
     colegiatura: 'FPV 4829',
-    services: ['Terapia Clínica (Venezuela)', 'Acompañamiento Emocional (Internacional)'],
-    specialties: ['Depresión', 'Estrés', 'Orientación vocacional', 'Selección y reclutamiento'],
+    services: ['Terapia Clínica (Venezuela)', 'Coaching de Vida (Internacional)'],
+    specialties: ['Ansiedad', 'Depresión', 'Estrés', 'Orientación Vocacional', 'Proyecto de Vida', 'Perfiles Psicológicos', 'Investigación Criminal', 'Selección y Reclutamiento', 'Cursos y Talleres'],
+    atencion: 'Adolescentes y adultos',
     bio: 'José Manuel Ferrer Caridad es Psicólogo Clínico, Psicofisiólogo Forense y Coach Organizacional con más de 25 años de experiencia profesional en el ámbito clínico, forense y corporativo. Atiende a adolescentes y adultos en evaluación, diagnóstico y tratamiento de ansiedad, depresión y estrés, además de brindar orientación vocacional y acompañamiento en la construcción de proyectos de vida. Su trayectoria incluye la elaboración de perfiles psicológicos, investigación criminal, procesos de selección y reclutamiento, así como el diseño y facilitación de cursos y talleres especializados.',
     statement: 'Licenciado para ejercer psicología clínica en Venezuela',
     image: '/Jose.jpg',
@@ -29,11 +31,12 @@ const team = [
   },
   {
     name: 'Vicky Boscán',
-    title: 'Psicóloga Clínica | Coach Organizacional | Especialista en Sexología y Psiconeuroinmunología Lingüística',
+    title: 'Psicóloga Clínica | Coach Organizacional | Especialista en Sexología y Psiconeuroinmunología Lingüística | Desarrolladora de Competencias',
     license: 'Venezuela',
-    colegiatura: 'FPV V-015069',
-    services: ['Terapia Clínica (Venezuela)', 'Acompañamiento Emocional (Internacional)'],
-    specialties: ['Sexología y Terapia de Parejas', 'Bienestar, equilibrio y Calidad de vida', 'Éxito y Autorrealización', 'Adicciones Modernas'],
+    colegiatura: 'FPV 4445',
+    services: ['Terapia Clínica (Venezuela)', 'Coaching de Vida (Internacional)'],
+    specialties: ['Trastornos del Neurodesarrollo', 'Ansiedad y Depresión', 'Trastornos de la Personalidad', 'Manejo de Emociones', 'Adicciones Modernas', 'Relación con la Alimentación', 'Autoestima y Proyecto de Vida', 'Sexología y Terapia de Parejas', 'Rehabilitación por Enfermedades Psicosomáticas', 'Bienestar, Equilibrio y Calidad de Vida', 'Éxito y Autorrealización'],
+    atencion: 'Niños, adolescentes y adultos',
     bio: 'Vicky Boscán es Psicóloga Clínica y Coach Organizacional con 25 años de experiencia profesional, especializada en Sexología y Psiconeuroinmunología Lingüística, así como en el desarrollo de competencias personales y profesionales. Acompaña a niños, adolescentes y adultos en el abordaje de trastornos del neurodesarrollo, ansiedad, depresión, trastornos de la personalidad, manejo de emociones, adicciones modernas y relación con la alimentación, promoviendo autoestima y el diseño de un proyecto de vida sólido. Su enfoque integral también incluye terapia de pareja, rehabilitación en enfermedades psicosomáticas y fortalecimiento del bienestar, el equilibrio, la calidad de vida, el éxito y la autorrealización.',
     statement: 'Licenciada para ejercer psicología clínica en Venezuela',
     image: '/Vicky.jpg',
@@ -116,12 +119,20 @@ export default function Equipo() {
                       <span className="font-semibold">{member.license}</span>
                     </div>
                     <div>
-                      <span className="text-gray-500 text-xs block">Colegiatura</span>
+                      <span className="text-gray-500 text-xs block">Federación</span>
                       <span className="font-semibold">{member.colegiatura}</span>
                     </div>
                   </div>
                   <p className="text-xs text-verde-700 mt-2 font-medium">{member.statement}</p>
                 </div>
+
+                {/* Atención */}
+                {member.atencion && (
+                  <div className="mb-4">
+                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Atención a:</span>
+                    <p className="text-sm text-gray-700 mt-1">{member.atencion}</p>
+                  </div>
+                )}
 
                 {/* Services */}
                 <div className="mb-4">

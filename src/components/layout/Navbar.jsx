@@ -6,6 +6,7 @@ const BOOKING_URL = 'https://alquimia-mental-reservas-1.onrender.com/booking';
 const links = [
   { to: '/', label: 'Inicio' },
   { to: '/servicios', label: 'Servicios' },
+  { to: '/grupos-terapeuticos', label: 'Grupos' },
   { to: '/equipo', label: 'Nuestro Equipo' },
   { to: '/como-funciona', label: 'Cómo Funciona' },
   { to: '/blog', label: 'Blog' },

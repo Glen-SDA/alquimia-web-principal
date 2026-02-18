@@ -34,7 +34,7 @@ El sueño y la ansiedad tienen una relación bidireccional: la ansiedad dificult
 
 ## ¿Cuándo buscar ayuda profesional?
 
-Estas herramientas son un excelente punto de partida, pero si la ansiedad persiste, interfiere con tu trabajo, relaciones o actividades cotidianas, es importante buscar apoyo profesional. En Alquimia Mental Online, nuestro equipo de psicólogos puede ayudarte a desarrollar un plan personalizado, ya sea a través de terapia clínica (si estás en Venezuela) o acompañamiento emocional (si estás en el exterior).
+Estas herramientas son un excelente punto de partida, pero si la ansiedad persiste, interfiere con tu trabajo, relaciones o actividades cotidianas, es importante buscar apoyo profesional. En Alquimia Mental Online, nuestro equipo de psicólogos puede ayudarte a desarrollar un plan personalizado, ya sea a través de terapia clínica (si estás en Venezuela) o coaching de vida (si estás en el exterior).
 
 *Tu bienestar emocional merece atención. Da el primer paso.*`,
   },
@@ -104,34 +104,34 @@ Mantener conexiones con tu país de origen a través de llamadas regulares, rede
 
 ## El rol del acompañamiento profesional
 
-El acompañamiento emocional durante el proceso migratorio puede hacer una diferencia significativa. Contar con un profesional que comprenda las particularidades culturales y emocionales de la migración hispanohablante permite procesar las emociones de forma saludable, desarrollar estrategias de adaptación y fortalecer la resiliencia.
+El coaching de vida durante el proceso migratorio puede hacer una diferencia significativa. Contar con un profesional que comprenda las particularidades culturales y emocionales de la migración hispanohablante permite procesar las emociones de forma saludable, desarrollar estrategias de adaptación y fortalecer la resiliencia.
 
-*En Alquimia Mental Online entendemos las complejidades del duelo migratorio. Nuestro servicio de acompañamiento emocional está especialmente diseñado para hispanohablantes en EE.UU. y el mundo que atraviesan estas transiciones.*`,
+*En Alquimia Mental Online entendemos las complejidades del duelo migratorio. Nuestro servicio de coaching de vida está especialmente diseñado para hispanohablantes en EE.UU. y el mundo que atraviesan estas transiciones.*`,
   },
   {
     id: 4,
-    slug: 'que-es-acompanamiento-emocional',
-    title: '¿Qué es el Acompañamiento Emocional?',
-    excerpt: 'Entiende la diferencia entre terapia clínica y acompañamiento emocional, y cómo cada uno puede ayudarte.',
+    slug: 'que-es-coaching-de-vida',
+    title: '¿Qué es el Coaching de Vida?',
+    excerpt: 'Entiende la diferencia entre terapia clínica y coaching de vida, y cómo cada uno puede ayudarte.',
     image: '/blog-acompanamiento.png',
     category: 'Servicios',
     date: '20 Ene 2026',
     readTime: '6 min',
-    content: `En el mundo de la salud mental existen diversos tipos de apoyo profesional, y es natural que surjan dudas sobre cuál es el más adecuado para cada situación. Dos de los más comunes son la terapia psicológica clínica y el acompañamiento emocional. Aunque comparten el objetivo de promover el bienestar, tienen diferencias importantes que conviene conocer.
+    content: `En el mundo de la salud mental existen diversos tipos de apoyo profesional, y es natural que surjan dudas sobre cuál es el más adecuado para cada situación. Dos de los más comunes son la terapia psicológica clínica y el coaching de vida. Aunque comparten el objetivo de promover el bienestar, tienen diferencias importantes que conviene conocer.
 
 ## Terapia Psicológica Clínica
 
 La terapia clínica es un proceso formal de tratamiento realizado por un psicólogo con licencia vigente. Incluye evaluación y diagnóstico de trastornos mentales según manuales reconocidos como el DSM-5, diseño de un plan de tratamiento con objetivos terapéuticos específicos, aplicación de técnicas basadas en evidencia (como terapia cognitivo-conductual, EMDR, terapia sistémica, entre otras), seguimiento clínico del progreso, y documentación profesional del proceso. Este tipo de servicio está regulado por las leyes del país donde ejerce el profesional. En el caso de Alquimia Mental Online, la terapia clínica está disponible exclusivamente para personas ubicadas físicamente en Venezuela, donde nuestros psicólogos tienen licencia vigente.
 
-## Acompañamiento Emocional
+## Coaching de Vida
 
-El acompañamiento emocional es un servicio de orientación y apoyo que, sin ser psicoterapia, ofrece un espacio profesional para abordar desafíos emocionales cotidianos. Incluye orientación para el bienestar emocional y el equilibrio personal, herramientas de crecimiento personal y autoconocimiento, estrategias para el manejo del estrés y la ansiedad cotidiana, apoyo durante transiciones de vida como migración, cambios laborales o rupturas, psicoeducación sobre salud mental, y recursos de autoayuda guiados por profesionales.
+El coaching de vida es un servicio de acompañamiento profesional que, sin ser psicoterapia, ofrece un espacio para abordar desafíos emocionales cotidianos. Incluye orientación para el bienestar emocional y el equilibrio personal, herramientas de crecimiento personal y autoconocimiento, estrategias para el manejo del estrés y la ansiedad cotidiana, apoyo durante transiciones de vida como migración, cambios laborales o rupturas, psicoeducación sobre salud mental, y recursos de autoayuda guiados por profesionales.
 
-Es importante entender lo que el acompañamiento emocional no es: no es psicoterapia ni tratamiento de trastornos mentales, no incluye diagnóstico clínico, no sustituye la atención psiquiátrica, y no es un servicio de emergencias o crisis.
+Es importante entender lo que el coaching de vida no es: no es psicoterapia ni tratamiento de trastornos mentales, no incluye diagnóstico clínico, no sustituye la atención psiquiátrica, y no es un servicio de emergencias o crisis.
 
 ## ¿Cuál necesito yo?
 
-Si te encuentras en Venezuela y sientes que necesitas un abordaje clínico formal para una condición como depresión, ansiedad clínica, trauma o trastornos de personalidad, la terapia clínica es tu mejor opción. Si estás fuera de Venezuela y buscas apoyo para manejar el estrés, atravesar una transición de vida, mejorar tus relaciones o simplemente tener un espacio seguro para hablar con un profesional, el acompañamiento emocional es ideal.
+Si te encuentras en Venezuela y sientes que necesitas un abordaje clínico formal para una condición como depresión, ansiedad clínica, trauma o trastornos de personalidad, la terapia clínica es tu mejor opción. Si estás fuera de Venezuela y buscas apoyo para manejar el estrés, atravesar una transición de vida, mejorar tus relaciones o simplemente tener un espacio seguro para hablar con un profesional, el coaching de vida es ideal.
 
 ## Nuestro compromiso ético
 
@@ -170,7 +170,7 @@ El obstáculo más frecuente es la creencia de que lo estás haciendo mal porque
 
 Existen aplicaciones gratuitas que pueden guiarte en tus primeras meditaciones, como Insight Timer o Medita. Los libros de Jon Kabat-Zinn, creador del programa MBSR (Reducción del Estrés Basada en Mindfulness), son excelentes recursos para profundizar. Y si prefieres un acompañamiento personalizado, un profesional de salud mental puede diseñar una práctica adaptada a tus necesidades específicas.
 
-*En Alquimia Mental Online integramos técnicas de mindfulness en nuestros procesos de acompañamiento emocional. Si quieres aprender a incorporar la atención plena en tu vida con guía profesional, estamos aquí para acompañarte.*`,
+*En Alquimia Mental Online integramos técnicas de mindfulness en nuestros procesos de coaching de vida. Si quieres aprender a incorporar la atención plena en tu vida con guía profesional, estamos aquí para acompañarte.*`,
   },
   {
     id: 6,
@@ -201,13 +201,13 @@ El cuerpo y la mente están profundamente conectados. El estrés y la ansiedad c
 
 ## Derribando mitos
 
-Buscar ayuda profesional no significa que estés loco o que seas débil. No necesitas estar en crisis para acudir a un profesional; de hecho, la prevención es ideal. La terapia o el acompañamiento emocional no son para siempre: son procesos con objetivos y plazos. No tienes que resolver todo solo ni esperar a que las cosas empeoren para actuar. Pedir ayuda es el primer paso hacia una vida más equilibrada.
+Buscar ayuda profesional no significa que estés loco o que seas débil. No necesitas estar en crisis para acudir a un profesional; de hecho, la prevención es ideal. La terapia o el coaching de vida no son para siempre: son procesos con objetivos y plazos. No tienes que resolver todo solo ni esperar a que las cosas empeoren para actuar. Pedir ayuda es el primer paso hacia una vida más equilibrada.
 
 ## ¿Cómo dar el primer paso?
 
 Si te identificaste con varias de estas señales, te invitamos a que te des permiso para buscar apoyo. No necesitas tener un diagnóstico ni saber exactamente qué te pasa. Solo necesitas la disposición de explorar lo que sientes en un espacio seguro, confidencial y sin juicio.
 
-*En Alquimia Mental Online, nuestro equipo de psicólogos con más de 20 años de experiencia está listo para acompañarte. Si estás en Venezuela, ofrecemos terapia clínica. Si estás en EE.UU. o cualquier otro país, nuestro servicio de acompañamiento emocional está diseñado para ti. Tu bienestar no puede esperar.*`,
+*En Alquimia Mental Online, nuestro equipo de psicólogos con más de 20 años de experiencia está listo para acompañarte. Si estás en Venezuela, ofrecemos terapia clínica. Si estás en EE.UU. o cualquier otro país, nuestro servicio de coaching de vida está diseñado para ti. Tu bienestar no puede esperar.*`,
   },
 ];
 

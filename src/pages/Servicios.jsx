@@ -20,7 +20,7 @@ export default function Servicios() {
       <section id="terapia" className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="bg-verde-50 border-2 border-verde-200 rounded-2xl p-8 sm:p-10">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-verde-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">Solo Venezuela</div>
+            <div className="bg-verde-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">Venezuela</div>
             <span className="text-sm text-gray-500">Servicio regulado por normativa venezolana</span>
           </div>
 
@@ -68,17 +68,17 @@ export default function Servicios() {
         </div>
       </section>
 
-      {/* Acompañamiento Emocional */}
-      <section id="acompanamiento" className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+      {/* Coaching de Vida */}
+      <section id="coaching" className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
         <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 sm:p-10">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full">EE.UU. e Internacional</div>
             <span className="text-sm text-gray-500">Disponible para hispanohablantes en todo el mundo</span>
           </div>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Acompañamiento Emocional y Orientación Psicoeducativa</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Coaching de Vida</h2>
           <p className="text-gray-600 mb-6 text-lg">
-            Este servicio está orientado al bienestar emocional, crecimiento personal y orientación psicoeducativa. No sustituye atención psiquiátrica o psicológica clínica.
+            Acompañamiento profesional enfocado en bienestar emocional, crecimiento personal y calidad de vida. No sustituye atención psiquiátrica o psicológica clínica.
           </p>
 
           {/* Lo que NO es */}
@@ -132,7 +132,7 @@ export default function Servicios() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-sm text-gray-500">
             Estamos en proceso de obtención de licencias en EE.UU. para poder ofrecer servicios de psicología clínica en estados específicos.
-            Mientras tanto, nuestros servicios internacionales se limitan a acompañamiento emocional y orientación psicoeducativa.
+            Mientras tanto, nuestros servicios internacionales se limitan a coaching de vida.
           </p>
         </div>
       </section>

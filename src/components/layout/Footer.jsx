@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const LEGAL_NOTICE = "Alquimia Mental Online LLC es una empresa registrada en el Estado de Florida, Estados Unidos. Los servicios de terapia psicológica clínica se ofrecen exclusivamente a personas ubicadas físicamente en Venezuela y son prestados por profesionales con licencia vigente en Venezuela. Los servicios ofrecidos fuera de Venezuela corresponden a acompañamiento emocional y orientación psicoeducativa, y no constituyen psicoterapia, diagnóstico ni tratamiento de trastornos mentales.";
+const LEGAL_NOTICE = "Alquimia Mental Online LLC es una empresa registrada en el Estado de Florida, Estados Unidos. Los servicios de terapia psicológica clínica se ofrecen exclusivamente a personas ubicadas físicamente en Venezuela y son prestados por profesionales con licencia vigente en Venezuela. Los servicios ofrecidos fuera de Venezuela corresponden a coaching de vida, y no constituyen psicoterapia, diagnóstico ni tratamiento de trastornos mentales.";
 
 export default function Footer() {
   return (
@@ -30,7 +30,8 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">Servicios</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/servicios#terapia" className="hover:text-verde-400 transition">Terapia Clínica (Venezuela)</Link></li>
-              <li><Link to="/servicios#acompanamiento" className="hover:text-verde-400 transition">Acompañamiento Emocional</Link></li>
+              <li><Link to="/servicios#coaching" className="hover:text-verde-400 transition">Coaching de Vida</Link></li>
+              <li><Link to="/grupos-terapeuticos" className="hover:text-verde-400 transition">Grupos Terapéuticos</Link></li>
               <li><Link to="/como-funciona" className="hover:text-verde-400 transition">Cómo Funciona</Link></li>
             </ul>
           </div>

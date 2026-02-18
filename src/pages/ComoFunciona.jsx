@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 
 const steps = [
-  { step: '1', title: 'Identifica tu servicio', desc: 'Si estás en Venezuela, puedes acceder a terapia psicológica clínica. Si estás en EE.UU. u otro país, ofrecemos acompañamiento emocional y orientación psicoeducativa.' },
+  { step: '1', title: 'Identifica tu servicio', desc: 'Si estás en Venezuela, puedes acceder a terapia psicológica clínica. Si estás en EE.UU. u otro país, ofrecemos coaching de vida.' },
   { step: '2', title: 'Lee el consentimiento informado', desc: 'Antes de agendar, deberás leer y aceptar nuestro consentimiento informado donde se detallan los alcances, limitaciones, confidencialidad y jurisdicción del servicio.' },
-  { step: '3', title: 'Completa la verificación', desc: 'Para terapia clínica (Venezuela), deberás confirmar tu ubicación física. Para acompañamiento emocional, confirmar que entiendes el alcance del servicio.' },
+  { step: '3', title: 'Completa la verificación', desc: 'Para terapia clínica (Venezuela), deberás confirmar tu ubicación física. Para coaching de vida, confirmar que entiendes el alcance del servicio.' },
   { step: '4', title: 'Agenda tu primera sesión', desc: 'Elige el profesional y horario que prefieras. Tu primera sesión incluye una evaluación inicial para entender tus necesidades.' },
   { step: '5', title: 'Inicia tu proceso', desc: 'Recibe acompañamiento continuo con sesiones regulares, seguimiento de progreso y recursos complementarios.' },
 ];
 
 const faqs = [
-  { q: '¿Cuál es la diferencia entre terapia clínica y acompañamiento emocional?', a: 'La terapia clínica incluye diagnóstico y tratamiento de trastornos mentales por un profesional licenciado. Solo está disponible para pacientes en Venezuela. El acompañamiento emocional es orientación para el bienestar y crecimiento personal, sin diagnóstico ni tratamiento clínico.' },
+  { q: '¿Cuál es la diferencia entre terapia clínica y coaching de vida?', a: 'La terapia clínica incluye diagnóstico y tratamiento de trastornos mentales por un profesional licenciado. Solo está disponible para pacientes en Venezuela. El coaching de vida es acompañamiento profesional para el bienestar emocional y crecimiento personal, sin diagnóstico ni tratamiento clínico.' },
   { q: '¿Por qué la terapia clínica solo está disponible para Venezuela?', a: 'Nuestros psicólogos tienen licencia vigente en Venezuela. Las leyes de telepsicología requieren que el profesional esté licenciado en la jurisdicción donde se encuentra el paciente. Estamos en proceso de obtener licencias en EE.UU.' },
   { q: '¿Las sesiones son confidenciales?', a: 'Sí. Seguimos protocolos alineados con HIPAA y mantenemos estricta confidencialidad. Las excepciones se detallan en nuestro consentimiento informado.' },
   { q: '¿Qué pasa si estoy en crisis?', a: 'Este servicio no está diseñado para atender emergencias. Si te encuentras en crisis o riesgo inmediato, contacta los servicios locales de emergencia de tu país.' },

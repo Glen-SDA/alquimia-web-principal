@@ -12,6 +12,7 @@ import Blog from './pages/Blog';
 import Contacto from './pages/Contacto';
 import Terminos from './pages/Terminos';
 import Privacidad from './pages/Privacidad';
+import GruposTerapeuticos from './pages/GruposTerapeuticos';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/terminos" element={<Terminos />} />
           <Route path="/privacidad" element={<Privacidad />} />
+          <Route path="/grupos-terapeuticos" element={<GruposTerapeuticos />} />
         </Routes>
       </main>
       <Footer />

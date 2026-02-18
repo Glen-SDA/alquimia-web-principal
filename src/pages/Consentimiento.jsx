@@ -27,7 +27,7 @@ export default function Consentimiento() {
               <h2 className="text-xl font-bold text-gray-900 mb-3">1. Alcance de los Servicios</h2>
               <div className="text-gray-600 space-y-3 text-sm">
                 <p><strong>Terapia Psicológica Clínica (Venezuela):</strong> Este servicio es prestado exclusivamente a personas ubicadas físicamente en Venezuela por profesionales con licencia vigente en dicho país. Incluye evaluación, diagnóstico y tratamiento psicológico dentro del marco regulatorio venezolano.</p>
-                <p><strong>Acompañamiento Emocional (Internacional):</strong> Este servicio consiste en orientación psicoeducativa y apoyo emocional. NO constituye psicoterapia, diagnóstico ni tratamiento de trastornos mentales. Está disponible para hispanohablantes en EE.UU. y otros países.</p>
+                <p><strong>Coaching de Vida (Internacional):</strong> Este servicio consiste en acompañamiento profesional enfocado en bienestar emocional y crecimiento personal. NO constituye psicoterapia, diagnóstico ni tratamiento de trastornos mentales. Está disponible para hispanohablantes en EE.UU. y otros países.</p>
               </div>
             </div>
 
@@ -36,7 +36,7 @@ export default function Consentimiento() {
               <h2 className="text-xl font-bold text-gray-900 mb-3">2. Limitaciones del Servicio</h2>
               <ul className="text-gray-600 space-y-2 text-sm list-disc pl-5">
                 <li>Los servicios se ofrecen mediante plataformas de telecomunicación (videollamada) y están sujetos a limitaciones tecnológicas.</li>
-                <li>El acompañamiento emocional NO sustituye atención psiquiátrica, psicológica clínica ni tratamiento farmacológico.</li>
+                <li>El coaching de vida NO sustituye atención psiquiátrica, psicológica clínica ni tratamiento farmacológico.</li>
                 <li>Los resultados del proceso dependen de múltiples factores, incluyendo la participación activa del usuario.</li>
                 <li>El profesional puede referir al usuario a otros especialistas si lo considera necesario.</li>
               </ul>

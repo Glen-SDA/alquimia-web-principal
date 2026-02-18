@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 const heroImages = ['/Hero01.png', '/Hero02.png', '/Hero03.png', '/Hero04.png', '/Hero05.png'];
 const BOOKING_URL = 'https://alquimia-mental-reservas-1.onrender.com/booking';
+const PAREJAS_URL = 'https://parejas.alquimiamental.online';
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
@@ -80,9 +81,28 @@ export default function Home() {
         <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">En Alquimia Mental, creemos en el poder transformador de una mente equilibrada y plena.</p>
 
         <div className="grid md:grid-cols-2 gap-8">
+          {/* Coaching de Vida - Internacional */}
+          <div className="border-2 border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
+            <div className="bg-gray-900 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">EE.UU. e Internacional</div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Coaching de Vida</h3>
+            <p className="text-gray-600 mb-4">Acompañamiento profesional para hispanohablantes enfocado en bienestar emocional, crecimiento personal y calidad de vida.</p>
+            <ul className="space-y-2 text-sm text-gray-600 mb-6">
+              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Bienestar emocional y crecimiento personal</li>
+              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Manejo de estrés y transiciones de vida</li>
+              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Biodescodificación y coaching emocional</li>
+              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Para hispanohablantes en cualquier país</li>
+            </ul>
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
+              <p className="text-xs text-amber-800">Este servicio <strong>no constituye</strong> psicoterapia, diagnóstico ni tratamiento de trastornos mentales.</p>
+            </div>
+            <Link to="/servicios#coaching" className="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded-lg font-semibold transition text-sm">
+              Más Información
+            </Link>
+          </div>
+
           {/* Terapia Venezuela */}
           <div className="border-2 border-verde-200 rounded-2xl p-8 hover:shadow-lg transition bg-verde-50/30">
-            <div className="bg-verde-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">Solo Venezuela</div>
+            <div className="bg-verde-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">Venezuela</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Terapia Psicológica Clínica</h3>
             <p className="text-gray-600 mb-4">Psicoterapia profesional prestada por psicólogos con licencia vigente en Venezuela, para pacientes ubicados físicamente en el país.</p>
             <ul className="space-y-2 text-sm text-gray-600 mb-6">
@@ -92,25 +112,6 @@ export default function Home() {
               <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Seguimiento continuo del proceso terapéutico</li>
             </ul>
             <Link to="/servicios#terapia" className="inline-block bg-verde-500 hover:bg-verde-600 text-white px-6 py-2.5 rounded-lg font-semibold transition text-sm">
-              Más Información
-            </Link>
-          </div>
-
-          {/* Acompañamiento Internacional */}
-          <div className="border-2 border-gray-200 rounded-2xl p-8 hover:shadow-lg transition">
-            <div className="bg-gray-900 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">EE.UU. e Internacional</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Acompañamiento Emocional</h3>
-            <p className="text-gray-600 mb-4">Orientación psicoeducativa y apoyo emocional para hispanohablantes. Enfocado en bienestar y crecimiento personal.</p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-6">
-              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Bienestar emocional y crecimiento personal</li>
-              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Orientación psicoeducativa</li>
-              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Manejo de estrés y transiciones de vida, biodescodificación y coaching emocional</li>
-              <li className="flex items-start gap-2"><span className="text-verde-500 mt-0.5">&#10003;</span>Para hispanohablantes en cualquier país</li>
-            </ul>
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
-              <p className="text-xs text-amber-800">Este servicio <strong>no constituye</strong> psicoterapia, diagnóstico ni tratamiento de trastornos mentales.</p>
-            </div>
-            <Link to="/servicios#acompanamiento" className="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded-lg font-semibold transition text-sm">
               Más Información
             </Link>
           </div>
@@ -141,12 +142,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Parejas App */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+        <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-2xl p-8 sm:p-10 flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-1">
+            <div className="bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">Herramienta Digital Gratuita</div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Fortalece tu Relación de Pareja</h2>
+            <p className="text-gray-600 mb-4">
+              Nuestra plataforma interactiva para parejas ofrece actividades diarias, evaluaciones de compatibilidad, seguimiento de hábitos saludables y una red de apoyo — todo diseñado por nuestro equipo de psicólogos.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-600 mb-6">
+              <li className="flex items-start gap-2"><span className="text-purple-500 mt-0.5">&#10003;</span>Actividades en pareja diseñadas por profesionales</li>
+              <li className="flex items-start gap-2"><span className="text-purple-500 mt-0.5">&#10003;</span>Evaluaciones de relación y compatibilidad</li>
+              <li className="flex items-start gap-2"><span className="text-purple-500 mt-0.5">&#10003;</span>Seguimiento de hábitos saludables juntos</li>
+              <li className="flex items-start gap-2"><span className="text-purple-500 mt-0.5">&#10003;</span>100% gratuita — regístrate y comienza hoy</li>
+            </ul>
+            <a href={PAREJAS_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-500 hover:bg-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold transition text-sm">
+              Ir a la App de Parejas &rarr;
+            </a>
+          </div>
+          <div className="flex flex-col items-center gap-3 shrink-0">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+              <div className="text-center">
+                <div className="text-5xl sm:text-6xl mb-1">💑</div>
+                <p className="text-xs font-semibold text-purple-600">Alquimia Parejas</p>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500">parejas.alquimiamental.online</p>
+          </div>
+        </div>
+      </section>
+
       {/* How it works preview */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
         <h2 className="text-3xl font-bold text-center mb-12">Cómo Funciona</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            { step: '1', title: 'Elige tu servicio', desc: 'Selecciona entre terapia clínica (Venezuela) o acompañamiento emocional (internacional).' },
+            { step: '1', title: 'Elige tu servicio', desc: 'Selecciona entre coaching de vida (internacional) o terapia clínica (Venezuela).' },
             { step: '2', title: 'Completa el consentimiento', desc: 'Lee y acepta el consentimiento informado con toda la información sobre alcances y limitaciones.' },
             { step: '3', title: 'Inicia tu proceso', desc: 'Agenda tu primera sesión con un profesional calificado de nuestro equipo.' },
           ].map(s => (

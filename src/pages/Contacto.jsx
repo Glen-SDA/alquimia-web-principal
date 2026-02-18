@@ -48,7 +48,7 @@ export default function Contacto() {
                   <select required value={form.service} onChange={e => setForm({ ...form, service: e.target.value })} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-500 focus:border-transparent outline-none">
                     <option value="">Seleccionar...</option>
                     <option value="terapia-venezuela">Terapia Clínica (estoy en Venezuela)</option>
-                    <option value="acompanamiento">Acompañamiento Emocional (fuera de Venezuela)</option>
+                    <option value="coaching">Coaching de Vida (fuera de Venezuela)</option>
                     <option value="parejas">Herramienta de Parejas</option>
                     <option value="info">Información general</option>
                   </select>
