@@ -16,60 +16,8 @@ export default function Servicios() {
         </div>
       </section>
 
-      {/* Terapia Clínica Venezuela */}
-      <section id="terapia" className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
-        <div className="bg-verde-50 border-2 border-verde-200 rounded-2xl p-8 sm:p-10">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="bg-verde-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">Venezuela</div>
-            <span className="text-sm text-gray-500">Servicio regulado por normativa venezolana</span>
-          </div>
-
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Terapia Psicológica Clínica</h2>
-          <p className="text-gray-600 mb-6 text-lg">
-            Disponible únicamente para personas ubicadas físicamente en Venezuela. Nuestros psicólogos cuentan con licencia vigente en Venezuela y están habilitados para ofrecer diagnóstico y tratamiento clínico.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 className="font-semibold text-lg mb-3 text-gray-900">Incluye:</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Evaluación psicológica inicial</li>
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Diagnóstico clínico</li>
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Plan de tratamiento personalizado</li>
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Psicoterapia individual</li>
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Terapia de pareja, familias y grupos terapéuticos</li>
-                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Seguimiento y evolución del proceso</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-3 text-gray-900">Marco Regulatorio:</h3>
-              <ul className="space-y-2 text-gray-600 text-sm">
-                <li>Ley de Ejercicio de la Psicología de Venezuela</li>
-                <li>Código de Ética del Psicólogo de Venezuela</li>
-                <li>Federación de Psicólogos de Venezuela (FPV)</li>
-                <li>Profesionales con número de colegiatura verificable y más de 20 años de experiencia</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Checkbox obligatorio */}
-          <div className="bg-white rounded-xl p-6 border border-verde-200">
-            <h3 className="font-semibold mb-3">Para agendar terapia clínica:</h3>
-            <label className="flex items-start gap-3 cursor-pointer">
-              <input type="checkbox" checked={venezuelaCheck} onChange={e => setVenezuelaCheck(e.target.checked)} className="mt-1 w-5 h-5 accent-verde-500" />
-              <span className="text-sm text-gray-700">Declaro que me encuentro físicamente en Venezuela y entiendo que este servicio de terapia clínica solo está disponible para personas en territorio venezolano.</span>
-            </label>
-            <div className="mt-4">
-              <a href={venezuelaCheck ? BOOKING_URL : undefined} className={`inline-block px-6 py-2.5 rounded-lg font-semibold text-sm transition ${venezuelaCheck ? 'bg-verde-500 hover:bg-verde-600 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed pointer-events-none'}`}>
-                Reserva Ahora
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Coaching de Vida */}
-      <section id="coaching" className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+      <section id="coaching" className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 sm:p-10">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-gray-900 text-white text-xs font-bold px-3 py-1.5 rounded-full">EE.UU. e Internacional</div>
@@ -123,6 +71,58 @@ export default function Servicios() {
             <a href={BOOKING_URL} className="bg-verde-500 hover:bg-verde-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition">
               Reserva Ahora
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Terapia Clínica Venezuela */}
+      <section id="terapia" className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+        <div className="bg-verde-50 border-2 border-verde-200 rounded-2xl p-8 sm:p-10">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="bg-verde-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">Venezuela</div>
+            <span className="text-sm text-gray-500">Servicio regulado por normativa venezolana</span>
+          </div>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Terapia Psicológica Clínica</h2>
+          <p className="text-gray-600 mb-6 text-lg">
+            Disponible únicamente para personas ubicadas físicamente en Venezuela. Nuestros psicólogos cuentan con licencia vigente en Venezuela y están habilitados para ofrecer diagnóstico y tratamiento clínico.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="font-semibold text-lg mb-3 text-gray-900">Incluye:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Evaluación psicológica inicial</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Diagnóstico clínico</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Plan de tratamiento personalizado</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Psicoterapia individual</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Terapia de pareja, familias y grupos terapéuticos</li>
+                <li className="flex items-start gap-2"><span className="text-verde-500 font-bold">&#10003;</span>Seguimiento y evolución del proceso</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-3 text-gray-900">Marco Regulatorio:</h3>
+              <ul className="space-y-2 text-gray-600 text-sm">
+                <li>Ley de Ejercicio de la Psicología de Venezuela</li>
+                <li>Código de Ética del Psicólogo de Venezuela</li>
+                <li>Federación de Psicólogos de Venezuela (FPV)</li>
+                <li>Profesionales con número de colegiatura verificable y más de 20 años de experiencia</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Checkbox obligatorio */}
+          <div className="bg-white rounded-xl p-6 border border-verde-200">
+            <h3 className="font-semibold mb-3">Para agendar terapia clínica:</h3>
+            <label className="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" checked={venezuelaCheck} onChange={e => setVenezuelaCheck(e.target.checked)} className="mt-1 w-5 h-5 accent-verde-500" />
+              <span className="text-sm text-gray-700">Declaro que me encuentro físicamente en Venezuela y entiendo que este servicio de terapia clínica solo está disponible para personas en territorio venezolano.</span>
+            </label>
+            <div className="mt-4">
+              <a href={venezuelaCheck ? BOOKING_URL : undefined} className={`inline-block px-6 py-2.5 rounded-lg font-semibold text-sm transition ${venezuelaCheck ? 'bg-verde-500 hover:bg-verde-600 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed pointer-events-none'}`}>
+                Reserva Ahora
+              </a>
+            </div>
           </div>
         </div>
       </section>
