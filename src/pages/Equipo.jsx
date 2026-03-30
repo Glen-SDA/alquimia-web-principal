@@ -22,22 +22,22 @@ const team = [
     license: 'Venezuela',
     colegiatura: 'FPV 4829',
     services: ['Terapia Clínica (Venezuela)', 'Coaching de Vida (Internacional)'],
-    specialties: ['Ansiedad', 'Depresión', 'Estrés', 'Orientación Vocacional', 'Proyecto de Vida', 'Perfiles Psicológicos', 'Investigación Criminal', 'Selección y Reclutamiento', 'Cursos y Talleres'],
+    specialties: ['Ansiedad, Depresión y Estrés', 'Orientación Vocacional y Proyecto de Vida', 'Selección y Reclutamiento de Talento Humano', 'Cursos y Talleres de Desarrollo Personal'],
     atencion: 'Adolescentes y adultos',
-    bio: 'Psicólogo Clínico y Forense con más de 28 años de experiencia en las áreas clínica y corporativa. Se especializa en el tratamiento de ansiedad y depresión, orientación vocacional y procesos de selección, integrando la investigación criminal con el desarrollo organizacional.',
+    bio: 'Psicólogo Clínico y Forense con más de 28 años de experiencia en las áreas clínica y corporativa. Se especializa en el tratamiento de ansiedad y depresión, orientación vocacional y procesos de selección de talento humano, con un enfoque integral.',
     statement: 'Licenciado para ejercer psicología clínica en Venezuela',
     image: '/Jose.jpg',
     thumbnail: '/Jose_2.jpg',
   },
   {
-    name: 'Vicky Boscán',
+    name: 'Vicky Boscán Chacín',
     title: 'Psicóloga Clínica | Coach Organizacional | Especialista en Sexología y Psiconeuroinmunología Lingüística | Desarrolladora de Competencias',
     license: 'Venezuela',
     colegiatura: 'FPV 4445',
     services: ['Terapia Clínica (Venezuela)', 'Coaching de Vida (Internacional)'],
-    specialties: ['Trastornos del Neurodesarrollo', 'Ansiedad y Depresión', 'Trastornos de la Personalidad', 'Manejo de Emociones', 'Adicciones Modernas', 'Relación con la Alimentación', 'Autoestima y Proyecto de Vida', 'Sexología y Terapia de Parejas', 'Rehabilitación por Enfermedades Psicosomáticas', 'Bienestar, Equilibrio y Calidad de Vida', 'Éxito y Autorrealización'],
+    specialties: ['Trastornos del Neurodesarrollo', 'Ansiedad y Depresión', 'Manejo de Emociones', 'Adicciones Modernas', 'Relación con la Alimentación', 'Sexología y Terapia de Parejas', 'Éxito y Autorrealización'],
     atencion: 'Niños, adolescentes y adultos',
-    bio: 'Especializada en sexología y neuroinmunología. Atiende a todas las edades en el manejo de ansiedad, depresión, trastornos del neurodesarrollo y adicciones, promoviendo el bienestar integral, la autoestima y el éxito personal. 30 años de experiencia.',
+    bio: 'Atiende a todas las edades en el manejo de ansiedad, depresión, trastornos del neurodesarrollo y adicciones, promoviendo el bienestar integral, la autoestima y el éxito personal. 30 años de experiencia.',
     statement: 'Licenciada para ejercer psicología clínica en Venezuela',
     image: '/Vicky.jpg',
     thumbnail: '/Vicky_2.jpg',
@@ -154,8 +154,9 @@ export default function Equipo() {
                   </div>
                 </div>
 
-                <a href={BOOKING_URL} className="block w-full text-center bg-verde-500 hover:bg-verde-600 text-white py-2.5 rounded-lg font-semibold text-sm transition">
-                  Reservar con {member.name.split(' ')[0]}
+                <a href={BOOKING_URL} className="block w-full text-center bg-verde-500 hover:bg-verde-600 text-white py-3 rounded-lg font-semibold text-sm transition">
+                  <span>Reservar con {member.name.split(' ')[0]}</span>
+                  <span className="block text-xs font-normal opacity-90">Psicólogo Clínico</span>
                 </a>
               </div>
             </div>
